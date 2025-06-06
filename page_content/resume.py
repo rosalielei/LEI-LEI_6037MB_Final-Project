@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_pdf_viewer import pdf_viewer
 import os
 def resume_page():
     st.title("LEI LEI")
@@ -32,15 +31,12 @@ def resume_page():
     # 添加PDF预览部分
     st.markdown("""
         <div style='background-color: #FFE4C4; padding: 10px; border-radius: 5px;'>
-            <h2 style='margin: 0; color: #212529;'>Resume Preview</h2>
+            <h2 style='margin: 0; color: #212529;'>Resume Download</h2>
         </div>
-        """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)  
     
     pdf_path = "static/docs/resume.pdf"
     if os.path.exists(pdf_path):
-        # 使用 streamlit_pdf_viewer 显示 PDF
-        pdf_viewer(pdf_path, width=700, height=800)
-        
         # 添加下载按钮
         with open(pdf_path, "rb") as pdf_file:
             st.download_button(
