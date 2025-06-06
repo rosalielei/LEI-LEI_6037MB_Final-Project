@@ -1,7 +1,7 @@
 streamlit
+streamlit-pdf-viewer
 matplotlib
 pillow
 pandas
 numpy
 os
-streamlit-pdf-viewer
