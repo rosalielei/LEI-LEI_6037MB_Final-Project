@@ -4,4 +4,4 @@ pillow
 pandas
 numpy
 os
-streamlit-pdf-viewer==0.2.0
+streamlit-pdf-viewer
